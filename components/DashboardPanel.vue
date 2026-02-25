@@ -1,4 +1,4 @@
-<script setup>
+<!-- <script setup>
 import { ref } from 'vue'
 import { useDashboardStore } from '../.vitepress/store/dashboard'
 
@@ -83,4 +83,4 @@ progress { width: 100%; height: 12px; border-radius: 6px; overflow: hidden; }
 
 /* 记事本样式 */
 textarea { width: 100%; padding: 12px; border-radius: 8px; border: 1px solid var(--vp-c-divider); background: var(--vp-c-bg); resize: vertical; font-family: inherit; }
-</style>
+</style> -->

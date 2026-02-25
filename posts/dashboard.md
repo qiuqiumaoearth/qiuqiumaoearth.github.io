@@ -10,10 +10,10 @@ categories:
 
 <script setup>
 import MyCalendar from '../components/MyCalendar.vue'
-import DashboardPanel from '../components/DashboardPanel.vue'
+// import DashboardPanel from '../components/DashboardPanel.vue'
 </script>
 
 # 我的学习主控台 🚀
 
 <MyCalendar />
-<DashboardPanel />
+<!-- <DashboardPanel /> -->
