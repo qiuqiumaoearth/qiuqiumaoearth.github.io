@@ -22,6 +22,11 @@
   },
   "homepage": "https://github.com/qiuqiumaoearth/qiuqiumao.blog#readme",
   "devDependencies": {
+    "sass": "^1.97.3",
+    "sass-embedded": "^1.97.3",
     "vitepress": "^1.6.4"
+  },
+  "dependencies": {
+    "@sugarat/theme": "^0.5.14"
   }
 }
