@@ -5,13 +5,13 @@ export const useDashboardStore = defineStore('dashboard', () => {
   // 1. 待办事项数据
   const todos = useLocalStorage('my-todos', [
     { id: 1, text: '完成个人博客的基础搭建与自动化部署', done: true },
-    { id: 2, text: '下午摸鱼时间，记得给蛋蛋开个主食罐头 🐈', done: false }
+    { id: 2, text: '下午摸鱼时间，记得给蛋蛋开个主食罐头 🐈', done: false },
     { id: 3, text: '复习前端知识点', done: false }
   ])
 
   // 2. 进度条数据
   const progressList = useLocalStorage('my-progress', [,
-    { id: 1, name: 'VitePress 博客改造计划', value: 85 }
+    { id: 1, name: 'VitePress 博客改造计划', value: 85 },
     { id: 2, name: 'Vue 项目学习进度', value: 15 }
   ])
 
