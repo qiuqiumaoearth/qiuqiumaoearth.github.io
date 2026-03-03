@@ -28,10 +28,9 @@ export default defineConfig({
       { icon: 'github', link: 'https://github.com/qiuqiumaoearth/qiuqiumaoearth.github.io' } 
     ],
     aside: 'left', 
+    outline: 'deep',
+    outlineTitle: '文章目录',
     
-    outline: {
-      level: [2, 6],
-      label: '文章目录'
-    },
+
   }
 })
