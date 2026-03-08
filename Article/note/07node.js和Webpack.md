@@ -440,7 +440,7 @@ node -v
 
 ### 05.npm软件包管理器
 
-1. npm 简介[链接](<[http://dev.nodejs.cn/learn/an-introduction-to-the-npm-package-manager#npm-%E7%AE%80%E4%BB%8B](http://dev.nodejs.cn/learn/an-introduction-to-the-npm-package-manager)>)： 软件包管理器，用于下载和管理 Node.js 环境中的软件包
+1. npm 简介[链接](http://dev.nodejs.cn/learn/an-introduction-to-the-npm-package-manager)： 软件包管理器，用于下载和管理 Node.js 环境中的软件包
 
    ![image-20230331155406652](img/07nodejs/image-20230331155406652.png)
 
@@ -650,7 +650,7 @@ node -v
 
 ### 02.Webpack 修改入口和出口
 
-1. [Webpack 配置](<[https://webpack.docschina.org/concepts/#entry](https://webpack.docschina.org/concepts/)>)：影响 Webpack 打包过程
+1. [Webpack 配置](https://webpack.docschina.org/concepts/#entry)：影响 Webpack 打包过程
 
 2. 步骤：
    1. 项目根目录，新建 Webpack.config.js 配置文件
@@ -1232,7 +1232,7 @@ node -v
 
 ### 14.Webpack 开发环境调错 source map
 
-1. [source map](<[https://webpack.docschina.org/guides/development/#using-source-maps](https://webpack.docschina.org/guides/development/)>)：可以准确追踪 error 和 warning 在原始代码的位置
+1. [source map](https://webpack.docschina.org/guides/development/)：可以准确追踪 error 和 warning 在原始代码的位置
 
 2. 问题：代码被压缩和混淆，无法正确定位源代码位置（行数和列数）
 
@@ -1262,7 +1262,7 @@ node -v
 
 ### 15.Webpack 设置解析别名路径alias
 
-1. [解析别名](<[https://webpack.docschina.org/configuration/resolve#resolvealias](https://webpack.docschina.org/configuration/resolve)>)：配置模块如何解析，创建 import 或 require 的别名，来确保模块引入变得更简单
+1. [解析别名](https://webpack.docschina.org/configuration/resolve)：配置模块如何解析，创建 import 或 require 的别名，来确保模块引入变得更简单
 
 2. 例如：
    1. 原来路径如下：
