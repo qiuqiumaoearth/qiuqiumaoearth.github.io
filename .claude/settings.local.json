@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm list:*)",
+      "Bash(node -e \"require\\('dotenv'\\).config\\(\\); const { Client } = require\\('@notionhq/client'\\); const notion = new Client\\({ auth: process.env.NOTION_TOKEN }\\); console.log\\('Token loaded:', process.env.NOTION_TOKEN ? 'Yes' : 'No'\\); console.log\\('Client created:', typeof notion.databases\\)\")",
+      "Bash(node scripts/sync-notion.js)",
+      "Bash(node -e ':*)",
+      "Bash(ls -lh Article/note/*.md)"
+    ]
+  }
+}
