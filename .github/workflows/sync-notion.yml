@@ -44,4 +44,4 @@ jobs:
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           git add Article/note/*.md
-          git diff --quiet && git diff --staged --quiet || (git commit -m "🔄 自动同步 Notion 笔记 $(date +'%Y-%m-%d %H:%M:%S')" && git push)
+          git diff --quiet && git diff --staged --quiet || (git commit -m "🔄 自动同步 Notion 笔记 $(date +'%Y-%m-%d %H:%M:%S')" && git pull --rebase && git push)
