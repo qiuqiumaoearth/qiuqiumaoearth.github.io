@@ -36,6 +36,9 @@ jobs:
       - name: 安装依赖
         run: npm install
 
+      - name: 拉取最新代码
+        run: git pull origin main
+
       - name: 同步 Notion 笔记
         env:
           NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
