@@ -46,7 +46,6 @@ jobs:
           git add Article/note/*.md
           if ! git diff --quiet || ! git diff --staged --quiet; then
             git commit -m "🔄 自动同步 Notion 笔记 $(date +'%Y-%m-%d %H:%M:%S')"
-            git fetch origin
-            git rebase origin/main
-            git push
+            git pull --rebase origin main
+            git push origin main
           fi
