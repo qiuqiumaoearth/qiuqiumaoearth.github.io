@@ -58,15 +58,17 @@ async function processImages(markdown, articleTitle) {
   }
 
   // 处理每张图片
+  let imageIndex = 0
   for (const match of matches) {
     const [fullMatch, alt, imageUrl] = match
 
     // 只处理 Notion 图片（包含 notion 或 amazonaws）
     if (imageUrl.includes('notion') || imageUrl.includes('amazonaws')) {
       try {
-        // 生成唯一文件名
-        const hash = crypto.createHash('md5').update(imageUrl).digest('hex').substring(0, 8)
+        // 使用文章标题+图片索引生成稳定的文件名
+        const hash = crypto.createHash('md5').update(`${articleTitle}-${imageIndex}`).digest('hex').substring(0, 8)
         const ext = imageUrl.split('.').pop().split('?')[0] || 'png'
+        imageIndex++
         const filename = `${articleTitle.replace(/[\/\\:*?"<>|]/g, '-')}-${hash}.${ext}`
         const imagePath = path.join(__dirname, '../Article/public/images/notion', filename)
 
