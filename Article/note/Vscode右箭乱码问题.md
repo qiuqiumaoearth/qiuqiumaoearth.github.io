@@ -16,7 +16,7 @@ updated: 2026-04-17T17:36:00.000Z
 在 **Windows 11** 上，使用 **HiBit Uninstaller** 扫描注册表后，**VS Code 用户版（User Installer）** 的右键菜单项 **“通过 Code 打开”** 会变成中文乱码，但点击功能本身仍然正常，只是显示异常。这个问题在我这里可以稳定复现，而且简单重装 VS Code 基本无效。
 
 
-![image.png](/images/notion/Vscode右箭乱码问题-9a35f77c.png)
+![image.png](/images/notion/Vscode右箭乱码问题-1e5d926b.png)
 
 
 这篇文章把我这段时间的排查过程、目前能确认的规律、临时修复办法，以及一个可自动清理问题注册表项的脚本整理出来，供后来遇到同样问题的人参考。
@@ -199,10 +199,10 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Classes\VSCodeContextMenu
 - 名称：`Title`
 - 数据：`通过 Code 打开`
 
-![image.png](/images/notion/Vscode右箭乱码问题-562ec434.png)
+![image.png](/images/notion/Vscode右箭乱码问题-d78552c2.png)
 
 
-![image.png](/images/notion/Vscode右箭乱码问题-46a7bc34.png)
+![image.png](/images/notion/Vscode右箭乱码问题-c1d8acb7.png)
 
 
 这个方法在社区里已经有人验证可用，而且再次扫描后，至少 `VSCodeContextMenu` 这一项不一定会再次影响右键菜单显示。
