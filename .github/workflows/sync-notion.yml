@@ -51,7 +51,7 @@ jobs:
           git config --local user.name "github-actions[bot]"
           git add Article/note/*.md
           git add Article/public/images/notion/* || true
-          if ! git diff --quiet || ! git diff --staged --quiet; then
+          if ! git diff --staged --quiet; then
             git commit -m "🔄 自动同步 Notion 笔记 $(date +'%Y-%m-%d %H:%M:%S')"
             git push origin main
           fi
