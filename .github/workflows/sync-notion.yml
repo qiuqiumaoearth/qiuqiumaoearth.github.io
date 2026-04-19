@@ -34,7 +34,7 @@ jobs:
           node-version: '24'
 
       - name: 安装依赖
-        run: npm install
+        run: npm ci
 
       - name: 拉取最新代码
         run: git pull origin main
